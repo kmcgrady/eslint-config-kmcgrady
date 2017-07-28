@@ -1,11 +1,11 @@
 {
-  "name": "eslint-config-ryansobol",
+  "name": "eslint-config-kmcgrady",
   "version": "10.0.2",
-  "description": "Ryan Sobol's shareable ESLint configuration",
+  "description": "Ken McGrady's shareable ESLint configuration",
   "main": "./es6/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ryansobol/eslint-config-ryansobol"
+    "url": "https://github.com/ryansobol/eslint-config-kmcgrady"
   },
   "scripts": {
     "lint": "eslint"
@@ -14,7 +14,7 @@
     "eslint",
     "eslintconfig",
     "config",
-    "ryansobol",
+    "kmcgrady",
     "javascript",
     "es5",
     "es6",
@@ -23,12 +23,12 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ryansobol/eslint-config-ryansobol/issues"
+    "url": "https://github.com/ryansobol/eslint-config-kmcgrady/issues"
   },
-  "homepage": "https://github.com/ryansobol/eslint-config-ryansobol",
+  "homepage": "https://github.com/kmcgrady/eslint-config-kmcgrady",
   "devDependencies": {
     "eslint": "^3.10.2",
-    "eslint-config-ryansobol": "file:."
+    "eslint-config-kmcgrady": "file:."
   },
   "dependencies": {
     "eslint-plugin-react": "^6.7.1"
