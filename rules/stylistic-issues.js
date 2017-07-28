@@ -9,7 +9,7 @@ module.exports = {
   'block-spacing': [2, 'always'],
 
   // Enforce one true brace style
-  'brace-style': [2, 'stroustrup', { allowSingleLine: true }],
+  'brace-style': [2, '1tbs', { allowSingleLine: true }],
 
   // Require camel case names
   'camelcase': [2, { properties: 'always' }],
