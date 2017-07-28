@@ -5,7 +5,7 @@
   "main": "./es6/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ryansobol/eslint-config-kmcgrady"
+    "url": "https://github.com/kmcgrady/eslint-config-kmcgrady"
   },
   "scripts": {
     "lint": "eslint"
@@ -23,7 +23,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ryansobol/eslint-config-kmcgrady/issues"
+    "url": "https://github.com/kmcgrady/eslint-config-kmcgrady/issues"
   },
   "homepage": "https://github.com/kmcgrady/eslint-config-kmcgrady",
   "devDependencies": {

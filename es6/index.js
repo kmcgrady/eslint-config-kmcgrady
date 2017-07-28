@@ -5,7 +5,7 @@ module.exports = {
     es6: true
   },
 
-  extends: 'ryansobol/core',
+  extends: 'kmcgrady/core',
 
   rules: Object.assign(require('../rules/ecmascript-6'), {
     // Disallow template literal placeholder syntax in regular strings

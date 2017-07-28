@@ -1,7 +1,7 @@
 module.exports = {
   'extends': [
-    'ryansobol/es6',
-    'ryansobol/node'
+    'kmcgrady/es6',
+    'kmcgrady/node'
   ],
 
   'rules': {

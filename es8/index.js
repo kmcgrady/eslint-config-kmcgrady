@@ -6,7 +6,7 @@ module.exports = {
     es6: true
   },
 
-  extends: 'ryansobol/core',
+  extends: 'kmcgrady/core',
 
   // Overwrite ES6 parser options
   parserOptions: {

@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  extends: 'ryansobol/core',
+  extends: 'kmcgrady/core',
 
   parserOptions: {
     ecmaFeatures: {

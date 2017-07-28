@@ -1,11 +1,11 @@
-# eslint-config-ryansobol
+# eslint-config-kmcgrady
 
 [![Build][build-img]][build-url]
 [![Chat][chat-img]][chat-url]
 [![License][license-img]][license-url]
 [![NPM][npm-img]][npm-url]
 
-Ryan Sobol's shareable ESLint configuration
+Ken McGrady's shareable ESLint configuration
 
 ## Philosophy
 
@@ -32,7 +32,7 @@ A major aspect of the [ESLint philosophy](eslint_philosophy) is that it doesn't 
 Install the package globally.
 
 ```shell
-npm install -g eslint eslint-config-ryansobol
+npm install -g eslint eslint-config-kmcgrady
 ```
 
 Change into your project's directory.
@@ -52,8 +52,8 @@ Add [language configuration][language] and [environment configuration][environme
 ```js
 module.exports = {
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6'
+    'kmcgrady/browser',
+    'kmcgrady/es6'
   ]
 };
 ```
@@ -81,7 +81,7 @@ npm init
 Install the package locally and add it to the `package.json` file as a development dependency.
 
 ```shell
-npm install -D eslint eslint-config-ryansobol
+npm install -D eslint eslint-config-kmcgrady
 ```
 
 Create a `.eslintrc.js` configuration file.
@@ -95,8 +95,8 @@ Add [language configuration][language] and [environmnent configuration][environm
 ```js
 module.exports = {
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6'
+    'kmcgrady/browser',
+    'kmcgrady/es6'
   ]
 };
 ```
@@ -129,16 +129,16 @@ A project is linted by **one** of the following language configurations.
 
 | Language     | Module            |
 |--------------|-------------------|
-| ECMAScript 5 | `ryansobol/es5`   |
-| ECMAScript 6 | `ryansobol/es6`   |
-| ECMAScript 7 | `ryansobol/es7`   |
-| ECMAScript 8 | `ryansobol/es8`   |
+| ECMAScript 5 | `kmcgrady/es5`   |
+| ECMAScript 6 | `kmcgrady/es6`   |
+| ECMAScript 7 | `kmcgrady/es7`   |
+| ECMAScript 8 | `kmcgrady/es8`   |
 
 Add the following code to the `.eslintrc.js` file of an ECMAScript 6 project.
 
 ```js
 module.exports = {
-  extends: 'ryansobol/es6'
+  extends: 'kmcgrady/es6'
 };
 ```
 
@@ -146,7 +146,7 @@ Or add the following code to the `.eslintrc.js` file of an ECMAScript 7 project.
 
 ```js
 module.exports = {
-  extends: 'ryansobol/es7'
+  extends: 'kmcgrady/es7'
 };
 ```
 
@@ -156,7 +156,7 @@ Customize any rule by overriding it in the `.eslintrc.js` file.
 
 ```js
 module.exports = {
-  extends: 'ryansobol/es6',
+  extends: 'kmcgrady/es6',
 
   rules: {
     'brace-style': [2, '1tbs', { allowSingleLine: true }],
@@ -170,21 +170,21 @@ Additionally, a project is linted by **any** of the following environment config
 
 | Environment | Module                  |
 |-------------|-------------------------|
-| browser     | `ryansobol/browser`     |
-| Express     | `ryansobol/express`     |
-| jQuery      | `ryansobol/jquery`      |
-| Materialize | `ryansobol/materialize` |
-| Mocha       | `ryansobol/mocha`       |
-| Node.js     | `ryansobol/node`        |
-| React       | `ryansobol/react`       |
+| browser     | `kmcgrady/browser`     |
+| Express     | `kmcgrady/express`     |
+| jQuery      | `kmcgrady/jquery`      |
+| Materialize | `kmcgrady/materialize` |
+| Mocha       | `kmcgrady/mocha`       |
+| Node.js     | `kmcgrady/node`        |
+| React       | `kmcgrady/react`       |
 
 Add the following code to the `.eslintrc.js` file of an ECMAScript 6 project that's running in a browser.
 
 ```js
 module.exports = {
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6'
+    'kmcgrady/browser',
+    'kmcgrady/es6'
   ]
 };
 ```
@@ -194,9 +194,9 @@ Add the following code to the `.eslintrc.js` file of an ECMAScript 6 project tha
 ```js
 module.exports = {
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6',
-    'ryansobol/jquery'
+    'kmcgrady/browser',
+    'kmcgrady/es6',
+    'kmcgrady/jquery'
   ]
 };
 ```
@@ -206,8 +206,8 @@ Add the following code to the `.eslintrc.js` file of an ECMAScript 6 project tha
 ```js
 module.exports = {
   extends: [
-    'ryansobol/es6',
-    'ryansobol/node'
+    'kmcgrady/es6',
+    'kmcgrady/node'
   ]
 };
 ```
@@ -217,10 +217,10 @@ Add the following code to the `.eslintrc.js` file of an ECMAScript 6 project tha
 ```js
 module.exports = {
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6',
-    'ryansobol/node',
-    'ryansobol/react'
+    'kmcgrady/browser',
+    'kmcgrady/es6',
+    'kmcgrady/node',
+    'kmcgrady/react'
   ]
 };
 ```
@@ -234,10 +234,10 @@ Parser options, like support for ECMAScript 6 modules, can be specified in the `
 ```js
 module.exports = {
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6',
-    'ryansobol/node',
-    'ryansobol/react'
+    'kmcgrady/browser',
+    'kmcgrady/es6',
+    'kmcgrady/node',
+    'kmcgrady/react'
   ],
 
   parserOptions: {
@@ -253,10 +253,10 @@ The default parser is [Espree][espree] but alternative parsers, like [babel-esli
 ```js
 module.exports = {
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6',
-    'ryansobol/node',
-    'ryansobol/react'
+    'kmcgrady/browser',
+    'kmcgrady/es6',
+    'kmcgrady/node',
+    'kmcgrady/react'
   ],
 
   parser: 'babel-eslint'
@@ -274,10 +274,10 @@ module.exports = {
   },
 
   extends: [
-    'ryansobol/browser',
-    'ryansobol/es6',
-    'ryansobol/node',
-    'ryansobol/react'
+    'kmcgrady/browser',
+    'kmcgrady/es6',
+    'kmcgrady/node',
+    'kmcgrady/react'
   ]
 };
 ```
@@ -300,14 +300,14 @@ Thanks to the Shopify team for publishing [eslint-config-shopify][shopify] under
 
 Also, thanks to my colleagues and students at [Galvanize][galvanize] for helping me with testing.
 
-[build-img]: https://img.shields.io/travis/ryansobol/eslint-config-ryansobol/master.svg?style=flat-square
-[build-url]: https://travis-ci.org/ryansobol/eslint-config-ryansobol
-[chat-img]: https://img.shields.io/gitter/room/eslint-config-ryansobol/Lobby.svg?style=flat-square
-[chat-url]: https://gitter.im/eslint-config-ryansobol/Lobby
-[license-img]: https://img.shields.io/npm/l/eslint-config-ryansobol.svg?style=flat-square
-[license-url]: https://github.com/ryansobol/eslint-config-ryansobol/blob/master/LICENSE
-[npm-img]: https://img.shields.io/npm/v/eslint-config-ryansobol.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/eslint-config-ryansobol
+[build-img]: https://img.shields.io/travis/kmcgrady/eslint-config-kmcgrady/master.svg?style=flat-square
+[build-url]: https://travis-ci.org/kmcgrady/eslint-config-kmcgrady
+[chat-img]: https://img.shields.io/gitter/room/eslint-config-kmcgrady/Lobby.svg?style=flat-square
+[chat-url]: https://gitter.im/eslint-config-kmcgrady/Lobby
+[license-img]: https://img.shields.io/npm/l/eslint-config-kmcgrady.svg?style=flat-square
+[license-url]: https://github.com/kmcgrady/eslint-config-kmcgrady/blob/master/LICENSE
+[npm-img]: https://img.shields.io/npm/v/eslint-config-kmcgrady.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/eslint-config-kmcgrady
 
 [angular]: https://github.com/Gillespie59/eslint-plugin-angular
 [babel]: https://github.com/babel/babel-eslint
