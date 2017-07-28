@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kmcgrady",
-  "version": "10.0.3",
+  "version": "10.0.4",
   "description": "Ken McGrady's shareable ESLint configuration",
   "main": "./es6/index.js",
   "repository": {
